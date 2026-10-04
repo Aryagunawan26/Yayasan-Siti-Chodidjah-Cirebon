@@ -1,0 +1,42 @@
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+    .stats-grid, .levels-grid, .programs-grid { grid-template-columns: repeat(2, 1fr); }
+    .hero h1 { font-size: 2.5rem; }
+}
+
+@media (max-width: 768px) {
+    .hamburger { display: flex; }
+    .nav-links {
+        position: fixed; top: 0; right: -100%; width: 250px; height: 100vh;
+        background: var(--white); flex-direction: column; align-items: center; justify-content: center;
+        box-shadow: -5px 0 15px rgba(0,0,0,0.1); transition: var(--transition);
+    }
+    .nav-links.active { right: 0; }
+    .nav-links a { color: var(--text); font-size: 1.1rem; }
+    .navbar.scrolled .hamburger span { background-color: var(--primary); }
+    .nav-actions .btn { display: none; } /* Hide CTA btn in mobile nav to save space */
+    
+    .about-container { grid-template-columns: 1fr; }
+    .about-text { text-align: center; }
+    .excellence-grid, .achievements-grid, .news-grid, .facilities-grid { grid-template-columns: repeat(2, 1fr); }
+    .footer-grid { grid-template-columns: 1fr; text-align: center; }
+    .footer-map { order: -1; }
+    
+    /* PARTNER LOGO (Ditambahkan di dalam batas layar 768px) */
+    .partners-grid {
+        gap: 30px;
+    }
+    .partner-logo img {
+        max-height: 80px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 { font-size: 2rem; }
+    .hero-buttons { flex-direction: column; }
+    .stats-grid, .excellence-grid, .levels-grid, .programs-grid, .achievements-grid, .news-grid, .facilities-grid {
+        grid-template-columns: 1fr;
+    }
+    .section-title { font-size: 1.8rem; }
+    .vision-mission { grid-template-columns: 1fr; }
+}
