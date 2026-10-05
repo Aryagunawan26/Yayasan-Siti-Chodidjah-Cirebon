@@ -102,12 +102,23 @@ document.addEventListener('DOMContentLoaded', async () => {
         `).join('');
 
         // RENDER: Partners
-        const partContainer = document.getElementById('partners-container');
-        if (partContainer) partContainer.innerHTML = partners.map(item => `
-            <div class="partner-logo">
-                <img src="${item.img}" alt="${item.name}" loading="lazy">
-            </div>
-        `).join('');
+const partContainer = document.getElementById('partners-container');
+if (partContainer) {
+    // 1. Simpan hasil render logo ke dalam satu variabel
+    const partnerItems = partners.map(item => `
+        <div class="partner-logo">
+            <img src="${item.img}" alt="${item.name}" loading="lazy">
+        </div>
+    `).join('');
+
+    // 2. Cetak variabel tersebut 2 KALI di dalam pembungkus track
+    partContainer.innerHTML = `
+        <div class="partners-track">
+            ${partnerItems}
+            ${partnerItems}
+        </div>
+    `;
+}
 
     } catch (error) {
         console.error("Gagal memuat data:", error);
