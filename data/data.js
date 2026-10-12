@@ -47,6 +47,7 @@ const DB = {
         { name: "YPI", img: "assets/images/YPI.jpg"},
         { name: "Cambridge", img: "assets/images/Cambridge.jpg"},
         { name: "Qiroati", img: "assets/images/Qiroati.jpg"},
-        { name: "BKKA", img: "assets/images/BKKA.jpg"}
+        { name: "BKKA", img: "assets/images/BKKA.jpg"},
+        { name: "TH", img: "assets/images/TH.jpg"}
     ]
 };
