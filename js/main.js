@@ -26,18 +26,22 @@ document.addEventListener('DOMContentLoaded', async () => {
             </div>
         `).join('');
 
-        // RENDER: Jenjang Pendidikan
-        const lvlContainer = document.getElementById('levels-container');
-        if (lvlContainer) lvlContainer.innerHTML = levels.map(item => `
+        // RENDER: Levels (Jenjang Pendidikan)
+    const levelsContainer = document.getElementById('levels-container');
+    if (levelsContainer && DB.levels) {
+        levelsContainer.innerHTML = DB.levels.map(item => `
             <div class="card img-card">
                 <img src="${item.img}" alt="${item.name}" loading="lazy">
                 <div class="card-body">
-                    <h3>${item.name}</h3>
-                    <p>${item.desc}</p>
-                    <a href="#" class="btn btn-outline mt-4" style="color:var(--primary); border-color:var(--primary); text-align:center;">Lihat Selengkapnya</a>
+                    <h3 style="font-size: 1.2rem;">${item.name}</h3>
+                    <p style="margin-bottom: 15px;">${item.desc}</p>
+                    
+                    <!-- Ini yang membuat tombol mengarah ke tk.html -->
+                    <a href="${item.link}" class="btn btn-outline" style="border-color: var(--primary); color: var(--primary); text-align: center; margin-top: auto;">Lihat Selengkapnya</a>
                 </div>
             </div>
         `).join('');
+    }
 
         // RENDER: Program Unggulan
         const progContainer = document.getElementById('programs-container');
