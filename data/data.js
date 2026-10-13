@@ -9,10 +9,10 @@ const DB = {
         { icon: "🤝", title: "Kolaborasi Orang Tua", desc: "Sinergi kuat antara sekolah dan keluarga demi kemajuan anak." }
     ],
     levels: [
-        { img: "assets/images/KB.jpg", name: "KB / PAUD", desc: "Fondasi awal dengan bermain sambil belajar." },
-        { img: "assets/images/TK.jpg", name: "Taman Kanak-Kanak", desc: "Pengembangan kognitif, motorik, dan sosial." },
-        { img: "assets/images/SD.jpg", name: "Sekolah Dasar (SD)", desc: "Pembentukan literasi, numerasi & karakter." },
-        { img: "assets/images/SMP.jpg", name: "Sekolah Menengah (SMP)", desc: "Eksplorasi minat, bakat & kepemimpinan." }
+        { img: "assets/images/KB.jpg", name: "KB / PAUD", desc: "Fondasi awal dengan bermain sambil belajar.", link: "tk.html" },
+        { img: "assets/images/depan-tk.jpg", name: "Taman Kanak-Kanak", desc: "Pengembangan kognitif, motorik, dan sosial.", link: "tk.html" },
+        { img: "assets/images/SD.jpg", name: "Sekolah Dasar (SD)", desc: "Pembentukan literasi, numerasi & karakter.", link: "sd.html" },
+        { img: "assets/images/SMP.jpg", name: "Sekolah Menengah (SMP)", desc: "Eksplorasi minat, bakat & kepemimpinan.", link: "smp.html" }
     ],
     programs: [
         { icon: "📖", title: "Metode Qiroati", desc: "sistem pembelajaran membaca Al-Qur'an secara langsung tanpa dieja." },
