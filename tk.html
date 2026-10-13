@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KB/TK Islam Al-Azhar 3 Cirebon</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- CSS Tambahan untuk tombol WhatsApp melayang (Floating Button) -->
+    <style>
+        .wa-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25D366;
+            color: #FFF;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            z-index: 9999;
+            transition: transform 0.3s;
+        }
+        .wa-float:hover {
+            transform: scale(1.1);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar scrolled" style="background-color: var(--white); box-shadow: var(--shadow); padding: 15px 0;">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <!-- LOGO YAYASAN/TK -->
+                <img src="assets/images/TK.jpg" alt="Logo TK" style="height: 50px; width: auto; object-fit: contain;">
+                <span class="logo-text" style="color: var(--primary);">TK Al-Azhar 3 Cirebon</span>
+            </a>
+            
+            <div class="nav-links" style="display: flex; align-items: center; gap: 15px;">
+                <!-- Tombol Kembali yang Lebih Elegan (Outline Button) -->
+                <a href="index.html" class="btn" style="border: 2px solid var(--primary); color: var(--primary); background-color: transparent; padding: 10px 20px; display: flex; align-items: center; gap: 8px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                    </svg>
+                    Beranda
+                </a>
+                
+                <!-- Tombol Daftar -->
+                <a href="https://play.google.com/store/apps/details?id=app.salamalazhar.id" target="_blank" class="btn" style="background-color: var(--secondary); color: white; padding: 12px 24px;">Daftar Sekarang</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION (Gambar Utama Paling Atas) -->
+    <section class="hero" style="background-image: url('assets/images/halaman.jpg'); height: 70vh; margin-top: 60px;">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="badge">Selamat Datang di</div>
+            <h1>TK Islam Al-Azhar 3 Cirebon</h1>
+            <p>Mencetak Generasi Qur'ani, Cerdas, dan Berakhlak Mulia</p>
+            <a href="https://play.google.com/store/apps/details?id=app.salamalazhar.id" target="_blank" class="btn btn-primary" style="font-size: 1.1rem; padding: 15px 30px;">Daftar Sekarang Melalui Aplikasi</a>
+        </div>
+    </section>
+
+    <!-- ABOUT US -->
+    <section class="container" style="padding-top: 5rem;">
+        <div class="about-container">
+            <div class="about-text">
+                <h2 class="section-title">About Us</h2>
+                <h3 style="color: var(--primary); margin-bottom: 15px; font-size: 1.5rem;">Tumbuh dalam Iman, Adab, dan Ilmu</h3>
+                <p>TK Islam Al-Azhar 3 Cirebon merupakan lembaga pendidikan yang memadukan Kurikulum Merdeka dengan Kurikulum Pengembangan Pribadi Muslim YPI Al-Azhar Jakarta, didukung oleh tenaga pendidik profesional dan lingkungan belajar yang menyenangkan.</p>
+                <p>Melalui pembelajaran berbasis bermain, kami menanamkan adab islami, kecintaan Al-Qur'an melalui metode Qiroati, serta mengembangkan kemandirian anak sebagai bekal ke jenjang pendidikan berikutnya.</p>
+            </div>
+            <div class="about-image">
+                <!-- GAMBAR TENTANG KAMI (Contoh: foto guru mengajar) -->
+                <img src="assets/images/belakang.jpg" alt="Kegiatan Belajar TK" style="border-radius: var(--radius); box-shadow: var(--shadow-hover);">
+            </div>
+        </div>
+    </section>
+
+    <!-- PROGRAM UNGGULAN -->
+    <section class="section-bg">
+        <div class="container text-center">
+            <h2 class="section-title">Program Unggulan</h2>
+            <div class="programs-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+                <div class="card text-center">
+                    <div class="card-icon">🧺</div>
+                    <h4 style="color: var(--primary); margin-bottom: 10px;">Practical Life</h4>
+                    <p>Melatih kemandirian melalui pembiasaan kegiatan sehari-hari.</p>
+                </div>
+                <div class="card text-center">
+                    <div class="card-icon">📖</div>
+                    <h4 style="color: var(--primary); margin-bottom: 10px;">Tahfidz & Qiroati</h4>
+                    <p>Menanamkan nilai Agama & Al-Qur'an sejak dini.</p>
+                </div>
+                <div class="card text-center">
+                    <div class="card-icon">🕌</div>
+                    <h4 style="color: var(--primary); margin-bottom: 10px;">Sholat Dhuha</h4>
+                    <p>Membentuk karakter religius & disiplin.</p>
+                </div>
+                <div class="card text-center">
+                    <div class="card-icon">🔤</div>
+                    <h4 style="color: var(--primary); margin-bottom: 10px;">Cambridge Class</h4>
+                    <p>Pengenalan Bahasa Inggris secara fun.</p>
+                </div>
+                <div class="card text-center">
+                    <div class="card-icon">📜</div>
+                    <h4 style="color: var(--primary); margin-bottom: 10px;">Hafalan Hadis</h4>
+                    <p>Memperdalam pemahaman tentang Al-Qur'an dan Hadis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FASILITAS -->
+    <section class="container">
+        <div class="about-container">
+            <div class="about-text">
+                <h2 class="section-title">Fasilitas Modern</h2>
+                <h3 style="color: var(--primary); margin-bottom: 20px;">Penunjang Prestasi Anak</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 12px; display: flex; align-items: center; gap: 10px;"><span style="color: var(--secondary); font-size: 1.2rem;">✅</span> Ruang kelas ber-AC dan nyaman</li>
+                    <li style="margin-bottom: 12px; display: flex; align-items: center; gap: 10px;"><span style="color: var(--secondary); font-size: 1.2rem;">✅</span> Perpustakaan Mini Interaktif</li>
+                    <li style="margin-bottom: 12px; display: flex; align-items: center; gap: 10px;"><span style="color: var(--secondary); font-size: 1.2rem;">✅</span> Lapangan Olahraga Luas & Aman</li>
+                    <li style="margin-bottom: 12px; display: flex; align-items: center; gap: 10px;"><span style="color: var(--secondary); font-size: 1.2rem;">✅</span> Playground (Area Bermain Indoor & Outdoor)</li>
+                    <li style="margin-bottom: 12px; display: flex; align-items: center; gap: 10px;"><span style="color: var(--secondary); font-size: 1.2rem;">✅</span> Unit Kesehatan Sekolah (UKS)</li>
+                    <li style="margin-bottom: 12px; display: flex; align-items: center; gap: 10px;"><span style="color: var(--secondary); font-size: 1.2rem;">✅</span> Aula Serbaguna & Mushola</li>
+                </ul>
+            </div>
+            
+            <div class="facilities-grid" style="grid-template-columns: repeat(2, 1fr); gap: 15px;">
+                <!-- FOTO FASILITAS -->
+                <div class="facility-item card" style="padding: 0; height: 180px;">
+                    <img src="assets/images/kelas.jpg" alt="Ruang Kelas">
+                    <div class="facility-overlay"><h4>Kelas ber-AC</h4></div>
+                </div>
+                <div class="facility-item card" style="padding: 0; height: 180px;">
+                    <img src="assets/images/perpus.jpg" alt="Perpustakaan">
+                    <div class="facility-overlay"><h4>Perpustakaan Mini</h4></div>
+                </div>
+                <div class="facility-item card" style="padding: 0; height: 180px;">
+                    <img src="assets/images/pg.jpg" alt="Playground">
+                    <div class="facility-overlay"><h4>Playground Anak</h4></div>
+                </div>
+                <div class="facility-item card" style="padding: 0; height: 180px;">
+                    <img src="assets/images/aula.jpg" alt="Aula">
+                    <div class="facility-overlay"><h4>Aula Serbaguna</h4></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EKSTRAKURIKULER -->
+    <section class="section-bg">
+        <div class="container text-center">
+            <h2 class="section-title">Ekstrakurikuler</h2>
+            <div class="facilities-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+                
+                <!-- FOTO ESKUL -->
+                <div class="facility-item card" style="padding: 0; height: 250px;">
+                    <img src="assets/images/db.jpg" alt="Marching Band">
+                    <div class="facility-overlay" style="bottom: 0; background: linear-gradient(to top, rgba(30,58,138,0.9), transparent);">
+                        <h4>Marching Band</h4>
+                    </div>
+                </div>
+                
+                <div class="facility-item card" style="padding: 0; height: 250px;">
+                    <img src="assets/images/tari.jpg" alt="Dancing">
+                    <div class="facility-overlay" style="bottom: 0; background: linear-gradient(to top, rgba(30,58,138,0.9), transparent);">
+                        <h4>Dancing</h4>
+                    </div>
+                </div>
+
+                <div class="facility-item card" style="padding: 0; height: 250px;">
+                    <img src="assets/images/draw.jpg" alt="Art">
+                    <div class="facility-overlay" style="bottom: 0; background: linear-gradient(to top, rgba(30,58,138,0.9), transparent);">
+                        <h4>Art</h4>
+                    </div>
+                </div>
+
+                <div class="facility-item card" style="padding: 0; height: 250px;">
+                    <img src="assets/images/asbd.jpg" alt="ASBD">
+                    <div class="facility-overlay" style="bottom: 0; background: linear-gradient(to top, rgba(30,58,138,0.9), transparent);">
+                        <h4>ASBD</h4>
+                    </div>
+                </div>
+
+                <div class="facility-item card" style="padding: 0; height: 250px;">
+                    <img src="assets/images/english.jpg" alt="English Club">
+                    <div class="facility-overlay" style="bottom: 0; background: linear-gradient(to top, rgba(30,58,138,0.9), transparent);">
+                        <h4>English Club</h4>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div style="background-color: #111827; padding: 30px; text-align: center; color: #9CA3AF;">
+        <p>&copy; 2026 Hamka Cyber Team. All Rights Reserved.</p>
+    </div>
+
+    <!-- TOMBOL WHATSAPP MELAYANG -->
+    <a href="https://wa.me/62+6281717435333?text=Halo%2C%20saya%20ingin%20bertanya%20seputar%20pendaftaran%20TK%20Al-Azhar%203" target="_blank" class="wa-float" title="Hubungi Kami via WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+        </svg>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
